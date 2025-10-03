@@ -53,6 +53,12 @@ The basic principles and components that make up BabySoC are:
 - To verify the logic of the system before physically making the chip.
 - To simulate how the CPU, memory, and peripherals will behave.
 - To debug and test software programs on the model before burning them into hardware.
+### Key aspects of functional modelling in BabySoC
+- CPU Behaviour: The processor core is modelled to execute a defined instruction set. The model checks whether instructions fetch from memory, decode correctly, and produce the expected results.
+- Memory Access: RAM and ROM modules are modelled to support read/write operations. Test programs can be stored in ROM and executed by the CPU during simulation.
+- Peripheral Functionality: Simple peripherals like GPIO, UART, and timers are represented functionally. For example, a GPIO module may turn an LED signal high/low, or a UART may simulate serial communication with a terminal.
+- Interconnect/Bus Modelling: The bus system is represented as a communication path that ensures data and instructions flow correctly between CPU, memory, and peripherals.
+- Testbenches: Functional models are verified using testbenches, which apply stimulus (input signals/programs) and observe the outputs to confirm correct behavior.
 ### Example of Functional Modelling Steps
 - Define the CPU : e.g., what instruction set it supports (ADD, SUB, LOAD, STORE).
 - Model the memory : a block that stores data and instructions.
