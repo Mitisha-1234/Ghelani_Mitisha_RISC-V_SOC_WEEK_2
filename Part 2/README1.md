@@ -90,6 +90,7 @@ Now for viewing the gtkwave, run the command:
 gtkwave pre_synth_sim.vcd
 ```
 ## Pre_synth_sim Waveform
+
 The pre-synthesis simulation of the VSDBabySoC was performed using GTKWave.
 
 <img width="1916" height="1079" alt="Part 2 " src="https://github.com/user-attachments/assets/95355fe1-e88d-48d0-b918-0fe9516601f9" />
